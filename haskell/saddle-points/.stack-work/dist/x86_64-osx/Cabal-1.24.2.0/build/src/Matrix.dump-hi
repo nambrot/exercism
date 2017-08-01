@@ -1,0 +1,59 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-31 18:35:55.339961 UTC
+
+interface saddle-points-1.0.0.3-IkZqrKtnlr8BmVb1i0lEl1:Matrix 8002
+  interface hash: a1306fa9c20952dd7e8d704908713384
+  ABI hash: efbee50385a979cd0462926e7dbb6719
+  export-list hash: 31a47a2e8f381a0d311668fc11a58d5a
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Matrix.saddlePoints
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1* base-4.9.1.0*
+                      ghc-prim-0.5.0.0 integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  array-0.5.1.1@array-0.5.1.1:Data.Array 01310623526f8acc73d1bb69e9d9530a
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Arr dbae05e7a9c0aba55cc706ecf0406507
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+d0773c98632d69e7685d614d91344cec
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Matrix.$trModule2
+                   Matrix.$trModule1) -}
+3b290305e3ce47d6ccf7a44ccb90b50e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Matrix"#) -}
+86fb203e29d311fb55dd1433c7958e2a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "saddle-points-1.0.0.3-IkZqrKtnlr8BmVb1i0lEl1"#) -}
+c21845ed01e6a7b0ddc897ba30ccc2b9
+  saddlePoints ::
+    (GHC.Arr.Ix i, GHC.Classes.Ord e) =>
+    GHC.Arr.Array (i, i) e -> [(i, i)]
+  {- Arity: 3,
+     Strictness: <S(LC(S)LLLLL),U(A,C(U),A,C(C1(U(U))),C(C1(U)),A,C(U(U)))><L,U(A,A,A,C(U),A,C(U),A,A)><L,U(U(U,U),U(U,U),U,U)> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

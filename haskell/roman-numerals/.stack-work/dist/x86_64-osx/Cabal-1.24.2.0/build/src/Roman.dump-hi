@@ -1,0 +1,466 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-28 17:10:43.013711 UTC
+
+interface roman-numerals-1.0.0.3-2w9uGOQ09M9GBxTnGpFDhO:Roman 8002
+  interface hash: fdf43a08108671ff658d7fdb416164b2
+  ABI hash: 2d42306b512fc2439c46ad96343464ba
+  export-list hash: 2ab0314bbc62cc5313e5efc597d61085
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Roman.numerals
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1 mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6
+                      transformers-0.5.2.0@transformers-0.5.2.0
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+         transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.Error
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Functor.Identity base-4.9.1.0:Data.List.NonEmpty
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Semigroup
+                         base-4.9.1.0:Data.Type.Equality base-4.9.1.0:Data.Version
+                         base-4.9.1.0:Data.Void base-4.9.1.0:GHC.Exts
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Control.Monad a6784c5dab0d75c63dabec5a37843f98
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Real 82e4e59051a13dba1da63e1e970a69e6
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.State 749dca8ca0e6625b32091d445bd92b01
+import  -/  mtl-2.2.1@mtl-2.2.1-BLKBelFsPB3BoFeSWSOYj6:Control.Monad.State.Class 6d31234b0a911b56412061943d18b89e
+import  -/  transformers-0.5.2.0@transformers-0.5.2.0:Control.Monad.Trans.State.Lazy 371607e50dde46b5f4103b3ab334a497
+7e937c28ddf73d7c2b2894001672be45
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Roman.$trModule2 Roman.$trModule1) -}
+5f0cca0e24832a328e6340ff839146a5
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Roman"#) -}
+bd4102c06b0d982371fa536ea6f8ca06
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "roman-numerals-1.0.0.3-2w9uGOQ09M9GBxTnGpFDhO"#) -}
+3aab6da1db6d1605d57bf744047fa024
+  $wgo ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+    -> GHC.Types.Int
+    -> GHC.Base.Maybe GHC.Base.String
+    -> (# GHC.Types.Int, GHC.Base.Maybe GHC.Base.String #)
+  {- Arity: 3, Strictness: <S,1*U><L,U(U)><L,U>, Inline: [0] -}
+30ced58b4e1ffa2c22d7a6ed7f8f22b5
+  $wr :: a -> GHC.Prim.Int# -> GHC.Prim.Int# -> [a]
+  {- Arity: 3, Strictness: <L,U><S,U><S,1*U>, Inline: [0],
+     Unfolding: (\ @ a
+                   (w :: a)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: GHC.Prim.Int#) ->
+                 case GHC.Real.$w$cdiv ww ww1 of ww4 { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.<# 0# ww4) of wild {
+                   GHC.Types.False -> GHC.Types.[] @ a
+                   GHC.Types.True
+                   -> let {
+                        lvl4 :: [a] = GHC.Types.: @ a w (GHC.Types.[] @ a)
+                      } in
+                      letrec {
+                        $wxs :: GHC.Prim.Int# -> [a]
+                          {- Arity: 1, Strictness: <S,1*U>, Inline: [0] -}
+                        = \ (ww2 :: GHC.Prim.Int#) ->
+                          case ww2 of ds1 {
+                            DEFAULT -> GHC.Types.: @ a w ($wxs (GHC.Prim.-# ds1 1#))
+                            1# -> lvl4 }
+                      } in
+                      $wxs ww4 } }) -}
+40a091f72f9379886b38bd83348e0628
+  numerals ::
+    GHC.Integer.Type.Integer -> GHC.Base.Maybe GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: GHC.Integer.Type.Integer) ->
+                 case GHC.Integer.Type.integerToInt x of wild { DEFAULT ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.># wild 3000#) of wild1 {
+                   GHC.Types.False
+                   -> case Roman.$wgo
+                             Roman.numerals1
+                             (GHC.Types.I# wild)
+                             (GHC.Base.Nothing @ GHC.Base.String) of ww { (#,#) ww1 ww2 ->
+                      ww2 }
+                   GHC.Types.True -> GHC.Base.Nothing @ GHC.Base.String } }) -}
+6c95736f0622b41d9a1d6683b223767a
+  numerals1 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals53
+                   Roman.numerals2) -}
+a21b5b4e4fd5b36ad42e4d59b9ae1bb1
+  numerals10 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals24
+                   Roman.numerals11) -}
+dd8412491241ae70e1037ed304761af7
+  numerals11 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals21
+                   Roman.numerals12) -}
+74ae6b53ed51c27d612af905e02f2bcc
+  numerals12 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals18
+                   Roman.numerals13) -}
+4b89c6735bcc7e6a5530b6fdcd41ec6f
+  numerals13 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals14
+                   (GHC.Types.[]
+                      @ (GHC.Types.Int,
+                         GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String))) -}
+f607c898b15f1505f32a27913b7e8128
+  numerals14 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals17, Roman.numerals15)) -}
+f4355b482ccc00bb0bc689b945f13ff1
+  numerals15 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Roman.$wr @ GHC.Types.Char Roman.numerals16 ww1 ww3 } }) -}
+4edb99ca7d0fba069378b0bf131ae606
+  numerals16 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'I'#) -}
+77cb4b245a1e46f11940ab73a2f31df0
+  numerals17 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1#) -}
+17d476e176c48d7fd88515392b073cf6
+  numerals18 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals20, Roman.numerals19)) -}
+35543d6a2814dd041db1d422317f3663
+  numerals19 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string) -}
+eda11a6ddfe4d73a328e40d801c0ed4c
+  numerals2 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals50
+                   Roman.numerals3) -}
+87a6b1b9ca718e54625ee088bcf75d08
+  numerals20 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 4#) -}
+78fd5f2ba60f223ffb8870c8d0e0007c
+  numerals21 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals23, Roman.numerals22)) -}
+e0161aedeeabc65c8ffe0b1401dd581e
+  numerals22 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string1) -}
+d99dc52ae26b508d7a5471488aebc044
+  numerals23 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 5#) -}
+705a49de46da8cbd43cb1dd607f60539
+  numerals24 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals26, Roman.numerals25)) -}
+4542ab44ae64fd2ee597b5e6ec43f8fe
+  numerals25 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string2) -}
+4dcfcd965d14c410b510006cf359e99d
+  numerals26 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 9#) -}
+160b4ae3701c5ab7b945e4dc1b928320
+  numerals27 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals30, Roman.numerals28)) -}
+3236f5270dcc4c3d7fa90acc8fb7901c
+  numerals28 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Roman.$wr @ GHC.Types.Char Roman.numerals29 ww1 ww3 } }) -}
+210cbb836a7da231f5c670d155e88f19
+  numerals29 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'X'#) -}
+ea1dddd2953d1e5489bc4a459c85e252
+  numerals3 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals47
+                   Roman.numerals4) -}
+de74bcfd9a890b76f6a87268d3ecf32a
+  numerals30 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 10#) -}
+13efe4b952d93d767c41cc47bc91e011
+  numerals31 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals33, Roman.numerals32)) -}
+e550eafa5cda1a82b7e5039743805431
+  numerals32 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string3) -}
+7204f9261413a2e7bb5f6eb8298b8855
+  numerals33 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 40#) -}
+f6f7b33ca65fed82c78eaa0380f72897
+  numerals34 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals36, Roman.numerals35)) -}
+a8b3e10d34bbf3b55a2984270618186e
+  numerals35 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string4) -}
+95caaef82922a8eb36c91caeabfbc8fe
+  numerals36 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 50#) -}
+0af3f59ccacea33557227299a12a260b
+  numerals37 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals39, Roman.numerals38)) -}
+61f0136197845f8abd37ecf045b9be12
+  numerals38 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string5) -}
+667e6932e32e9289fdd9bc3948f34148
+  numerals39 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 90#) -}
+c5d9c5c2d21ad12aaa45952c4524a404
+  numerals4 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals44
+                   Roman.numerals5) -}
+f042707b79abc03ae6bc53b4497e67b5
+  numerals40 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals43, Roman.numerals41)) -}
+3d31718f5435250ee85d9ff9c90997aa
+  numerals41 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Roman.$wr @ GHC.Types.Char Roman.numerals42 ww1 ww3 } }) -}
+2ffe03a31828ed35bd3e40e789d1eab6
+  numerals42 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'C'#) -}
+dbe5069818ce17f22f7355171e7c8b0a
+  numerals43 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 100#) -}
+ea1606ebea2ad3dab9c5e07f6538ffbb
+  numerals44 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals46, Roman.numerals45)) -}
+f786376a680f1bb3bddb6f96c88dd59c
+  numerals45 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string6) -}
+066a8c768c1715dcb125e3299047aa16
+  numerals46 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 400#) -}
+5725694ca7fe853dda5014c0a5c645cf
+  numerals47 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals49, Roman.numerals48)) -}
+2f15f82e9201ba98517fb57c10466f6d
+  numerals48 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string7) -}
+13fba8c9a65fe593daea6b3ea397b3f6
+  numerals49 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 500#) -}
+9e5351e64b4fe74d5b3b73ee990a4f03
+  numerals5 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals40
+                   Roman.numerals6) -}
+e8b63eefcb420e78376678598efcfdd3
+  numerals50 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals52, Roman.numerals51)) -}
+e2f03a813fa10191111513b255f98e9f
+  numerals51 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2, Strictness: <L,A><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ (ds :: GHC.Types.Int) (ds1 :: GHC.Types.Int) ->
+                 Roman.numerals_string8) -}
+bcde9caa8c7c48d5248435b6d1b7d42b
+  numerals52 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 900#) -}
+4e533647c1af5431c2bad71764ecf9c4
+  numerals53 ::
+    (GHC.Types.Int, GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char])
+  {- Strictness: m,
+     Unfolding: ((Roman.numerals56, Roman.numerals54)) -}
+66017dd409ca3ade5b0f2778de334aed
+  numerals54 :: GHC.Types.Int -> GHC.Types.Int -> [GHC.Types.Char]
+  {- Arity: 2,
+     Unfolding: (\ (w :: GHC.Types.Int) (w1 :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 case w1 of ww2 { GHC.Types.I# ww3 ->
+                 Roman.$wr @ GHC.Types.Char Roman.numerals55 ww1 ww3 } }) -}
+a93455420f4ed18a5de372e0dc2398a6
+  numerals55 :: GHC.Types.Char
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.C# 'M'#) -}
+4d3288380381ca9c255d5400b69a00a2
+  numerals56 :: GHC.Types.Int
+  {- HasNoCafRefs, Strictness: m, Unfolding: (GHC.Types.I# 1000#) -}
+7e91ce51bb46ed0601c40abb0670a509
+  numerals6 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals37
+                   Roman.numerals7) -}
+adca9b6e27c6b345687b944fd1eafb0f
+  numerals7 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals34
+                   Roman.numerals8) -}
+cee94c78820e30de81982360d628cab1
+  numerals8 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals31
+                   Roman.numerals9) -}
+5bbc42b391114abedac092be7a7a440a
+  numerals9 ::
+    [(GHC.Types.Int,
+      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)]
+  {- Strictness: m2,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Int,
+                      GHC.Types.Int -> GHC.Types.Int -> GHC.Base.String)
+                   Roman.numerals27
+                   Roman.numerals10) -}
+f0e50331f75efb962596dbc895674aeb
+  numerals_string :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "IV"#) -}
+3a8d82fdae6022f4406f54abd0fd5c34
+  numerals_string1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "V"#) -}
+e16785b74347d79cf73ebb30dd7dfd92
+  numerals_string2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "IX"#) -}
+cf3950c2c075100cbb6415db841dbb14
+  numerals_string3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "XL"#) -}
+1f3c220f6830baf59a5862c4d5bc4ef2
+  numerals_string4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "L"#) -}
+380f2e84e2b0cab696ff6528cae15ac3
+  numerals_string5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "XC"#) -}
+9a80ab675b5bcd5edb2e6ff1ff18ad8d
+  numerals_string6 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "CD"#) -}
+db111866d312b500be5df8f8b0175cab
+  numerals_string7 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "D"#) -}
+999fda44f0da56584616dd2c643b0726
+  numerals_string8 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "CM"#) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,517 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-11 02:33:09.448255 UTC
+
+interface nucleotide-count-1.0.0.3-1meloKazsgKAGU5BFCvnwr:DNA 8002
+  interface hash: 2674c3b2ad7acae79c4071614ecee7b6
+  ABI hash: 18e94139f88db4ede668a7ed5b8effa5
+  export-list hash: b281629842585402db2f16bc5de2516a
+  orphan hash: f40971a9247a1d26a5bfa1072016f1a1
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  DNA.nucleotideCounts
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Either 20b09ef8d0a5b74fdec011c40c1587f5
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 0bdf3d057a415ec1b84a7b1994efbe47
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fMonoidMon :: GHC.Base.Monoid DNA.Mon
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ DNA.Mon
+                  DNA.$fMonoidMon_$cmempty
+                  DNA.$fMonoidMon_$cmappend
+                  DNA.$fMonoidMon_$cmconcat -}
+898ca641782d40c001e1544a98227822
+  $fMonoidMon1 ::
+    GHC.Types.Char -> GHC.Types.Int -> GHC.Types.Int -> GHC.Types.Int
+  {- Arity: 3, HasNoCafRefs,
+     Unfolding: (\ (ds :: GHC.Types.Char)
+                   (x :: GHC.Types.Int)[OneShot]
+                   (y :: GHC.Types.Int)[OneShot] ->
+                 GHC.Num.$fNumInt_$c+ x y) -}
+07def416e35d64d9bf3b6d2f5185303d
+  $fMonoidMon10 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'T'#) -}
+fd09adb5882c562630ff7d34e0773a3a
+  $fMonoidMon11 :: (GHC.Types.Char, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((DNA.$fMonoidMon12, DNA.$fMonoidMon9)) -}
+929309c97d8f88d54718e9b9e26654a8
+  $fMonoidMon12 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'G'#) -}
+cb36cf929a0c852ccc20976aba0eab1d
+  $fMonoidMon13 :: (GHC.Types.Char, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((DNA.$fMonoidMon14, DNA.$fMonoidMon9)) -}
+5833f05675288024c0ad952498ad2cfd
+  $fMonoidMon14 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'C'#) -}
+fded7fa3e3a1cf920f68ce6073dda42d
+  $fMonoidMon15 :: (GHC.Types.Char, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((DNA.$fMonoidMon16, DNA.$fMonoidMon9)) -}
+e8b9f81abe8206e432ace20cdeabd2fc
+  $fMonoidMon16 :: GHC.Types.Char
+  {- HasNoCafRefs, Unfolding: (GHC.Types.C# 'A'#) -}
+16495a16cd57e254f666d4064e83b152
+  $fMonoidMon17 ::
+    Data.Map.Base.Map GHC.Types.Char a1
+    -> [(GHC.Types.Char, a1)] -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+fa43b2b44dc98064a340c6fd97000c8a
+  $fMonoidMon2 ::
+    Data.Either.Either
+      GHC.Base.String (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+  {- Strictness: m2,
+     Unfolding: (Data.Either.Right
+                   @ GHC.Base.String
+                   @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                   DNA.$fMonoidMon3) -}
+d01cef182869894b2c961f147eefff45
+  $fMonoidMon3 :: Data.Map.Base.Map GHC.Types.Char GHC.Types.Int
+  {- Unfolding: (DNA.$fMonoidMon_$sfromList
+                   @ GHC.Types.Int
+                   DNA.$fMonoidMon4) -}
+19243f6318b1189ef4b132d6f8645320
+  $fMonoidMon4 :: [(GHC.Types.Char, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Int)
+                   DNA.$fMonoidMon15
+                   DNA.$fMonoidMon5) -}
+8b2e87cad2fa5739008b8835e074db27
+  $fMonoidMon5 :: [(GHC.Types.Char, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Int)
+                   DNA.$fMonoidMon13
+                   DNA.$fMonoidMon6) -}
+0c6f5fc6a2babd23794d317e9ff81a3f
+  $fMonoidMon6 :: [(GHC.Types.Char, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Int)
+                   DNA.$fMonoidMon11
+                   DNA.$fMonoidMon7) -}
+45e47c829b5d0d25cb2304621ecf6801
+  $fMonoidMon7 :: [(GHC.Types.Char, GHC.Types.Int)]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ (GHC.Types.Char, GHC.Types.Int)
+                   DNA.$fMonoidMon8
+                   (GHC.Types.[] @ (GHC.Types.Char, GHC.Types.Int))) -}
+d0f7b8abf8f4059d2ab97cc58969d893
+  $fMonoidMon8 :: (GHC.Types.Char, GHC.Types.Int)
+  {- HasNoCafRefs,
+     Unfolding: ((DNA.$fMonoidMon10, DNA.$fMonoidMon9)) -}
+9c201d8749834e0d4984421a1608d153
+  $fMonoidMon9 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fMonoidMon_$cmappend :: DNA.Mon -> DNA.Mon -> DNA.Mon
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>,
+     Unfolding: (\ (ds :: DNA.Mon) (ds1 :: DNA.Mon) ->
+                 case ds `cast` (DNA.N:Mon[0]) of wild {
+                   Data.Either.Left ds2 -> wild `cast` (Sym (DNA.N:Mon[0]))
+                   Data.Either.Right xs
+                   -> case ds1 `cast` (DNA.N:Mon[0]) of wild1 {
+                        Data.Either.Left ipv -> wild1 `cast` (Sym (DNA.N:Mon[0]))
+                        Data.Either.Right ys
+                        -> (Data.Either.Right
+                              @ GHC.Base.String
+                              @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                              (DNA.$fMonoidMon_$sunionWithKey
+                                 @ GHC.Types.Int
+                                 DNA.$fMonoidMon1
+                                 xs
+                                 ys))
+                             `cast`
+                           (Sym (DNA.N:Mon[0])) } }) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fMonoidMon_$cmconcat :: [DNA.Mon] -> DNA.Mon
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (eta :: [DNA.Mon]) -> DNA.$fMonoidMon_go eta) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fMonoidMon_$cmempty :: DNA.Mon
+  {- Strictness: m2,
+     Unfolding: InlineRule (0, True, True)
+                DNA.$fMonoidMon2 `cast` (Sym (DNA.N:Mon[0])) -}
+05d344f67b5a2069526df2d835664d14
+  $fMonoidMon_$sfromList ::
+    [(GHC.Types.Char, a)] -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (ds :: [(GHC.Types.Char, a)]) ->
+                 case ds of wild {
+                   [] -> Data.Map.Base.Tip @ GHC.Types.Char @ a
+                   : ds1 ds2
+                   -> case ds1 of wild1 { (,) kx x ->
+                      case ds2 of wild2 {
+                        []
+                        -> case kx of dt { GHC.Types.C# ipv ->
+                           Data.Map.Base.Bin
+                             @ GHC.Types.Char
+                             @ a
+                             1#
+                             dt
+                             x
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                             (Data.Map.Base.Tip @ GHC.Types.Char @ a) }
+                        : ipv ipv1
+                        -> case ipv of wild3 { (,) ky ds3 ->
+                           case kx of wild4 { GHC.Types.C# c1 ->
+                           case ky of wild5 { GHC.Types.C# c2 ->
+                           case GHC.Prim.tagToEnum#
+                                  @ GHC.Types.Bool
+                                  (GHC.Prim.geChar# c1 c2) of wild6 {
+                             GHC.Types.False
+                             -> DNA.$wpoly_go10
+                                  @ a
+                                  1#
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2
+                             GHC.Types.True
+                             -> DNA.$fMonoidMon17
+                                  @ a
+                                  (Data.Map.Base.Bin
+                                     @ GHC.Types.Char
+                                     @ a
+                                     1#
+                                     wild4
+                                     x
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                                     (Data.Map.Base.Tip @ GHC.Types.Char @ a))
+                                  wild2 } } } } } } }) -}
+137706e863495cb669c310a84ba2fc6b
+  $fMonoidMon_$sunionWithKey ::
+    (GHC.Types.Char -> a -> a -> a)
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,C(C1(C1(U)))><S,1*U><S,1*U> -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fMonoidMon_go :: [DNA.Mon] -> DNA.Mon
+  {- Arity: 1, Strictness: <S,1*U> -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fShowMon :: GHC.Show.Show DNA.Mon
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ DNA.Mon
+                  DNA.$fShowMon_$cshowsPrec
+                  DNA.$fShowMon_$cshow
+                  DNA.$fShowMon_$cshowList -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fShowMon1 :: DNA.Mon -> GHC.Show.ShowS
+  {- Arity: 1,
+     Unfolding: (\ (w :: DNA.Mon) -> DNA.$w$cshowsPrec 0# w) -}
+18c5a39007e025ff66acf08737796c85
+  $fShowMon2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Mon "#) -}
+744da09fe091f72f3bc2fefc5ceb2445
+  $fShowMon3 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows4
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+76df9eb6e9e8310f6b083b23e34aa587
+  $fShowMon4 :: [GHC.Types.Char]
+  {- HasNoCafRefs,
+     Unfolding: (GHC.Types.:
+                   @ GHC.Types.Char
+                   GHC.Show.shows6
+                   DNA.$fShowMon3) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fShowMon_$cshow :: DNA.Mon -> GHC.Base.String
+  {- Arity: 1, Strictness: <L,1*U>,
+     Unfolding: (\ (x :: DNA.Mon) ->
+                 GHC.Base.++
+                   @ GHC.Types.Char
+                   DNA.$fShowMon2
+                   (case x `cast` (DNA.N:Mon[0]) of wild {
+                      Data.Either.Left b1
+                      -> GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows7
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Data.Either.$fShowEither3
+                              (GHC.Types.:
+                                 @ GHC.Types.Char
+                                 GHC.Show.shows6
+                                 (GHC.Show.showLitString b1 DNA.$fShowMon4)))
+                      Data.Either.Right b1
+                      -> GHC.Types.:
+                           @ GHC.Types.Char
+                           GHC.Show.shows7
+                           (GHC.Base.++
+                              @ GHC.Types.Char
+                              Data.Either.$fShowEither2
+                              (Data.Map.Base.$w$cshowsPrec
+                                 @ GHC.Types.Char
+                                 @ GHC.Types.Int
+                                 GHC.Show.$fShowChar
+                                 GHC.Show.$fShowInt
+                                 11#
+                                 b1
+                                 DNA.$fShowMon3)) })) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fShowMon_$cshowList :: [DNA.Mon] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__ @ DNA.Mon DNA.$fShowMon1) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $fShowMon_$cshowsPrec :: GHC.Types.Int -> DNA.Mon -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S(S),1*U(U)><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ (w :: GHC.Types.Int) (w1 :: DNA.Mon) ->
+                 case w of ww { GHC.Types.I# ww1 -> DNA.$w$cshowsPrec ww1 w1 }) -}
+1a038984753256dd24be5e30845d56a4
+  $fShowMon_$s$fShowMap ::
+    GHC.Show.Show (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                  (Data.Map.Base.$fShowMap_$cshowsPrec
+                     @ GHC.Types.Char
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowChar
+                     GHC.Show.$fShowInt)
+                  (Data.Map.Base.$fShowMap_$cshow
+                     @ GHC.Types.Char
+                     @ GHC.Types.Int
+                     GHC.Show.$fShowChar
+                     GHC.Show.$fShowInt)
+                  DNA.$fShowMon_$s$fShowMap_$cshowList -}
+c1a8d3276d22bc03c67a2a59f1fcd961
+  $fShowMon_$s$fShowMap_$cshowList ::
+    [Data.Map.Base.Map GHC.Types.Char GHC.Types.Int] -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,1*U><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (ls :: [Data.Map.Base.Map GHC.Types.Char GHC.Types.Int])
+                   (s :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                   (Data.Map.Base.$fShowMap_$cshowsPrec
+                      @ GHC.Types.Char
+                      @ GHC.Types.Int
+                      GHC.Show.$fShowChar
+                      GHC.Show.$fShowInt
+                      GHC.Show.shows22)
+                   ls
+                   s) -}
+d703f5558b1ea1b2694e2f9a07ebeb85
+  $sfilterGt1 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char v
+    -> Data.Map.Base.Map GHC.Types.Char v
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+cbc50581d608814c0e29c53809d34e31
+  $sfilterLt1 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char v
+    -> Data.Map.Base.Map GHC.Types.Char v
+  {- Arity: 2, Strictness: <L,1*U(U)><S,1*U> -}
+668cecdba2eb97264997a1a6457fbe7f
+  $strim1 ::
+    GHC.Types.Char
+    -> GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,1*U(U)><L,1*U(U)><S,1*U> -}
+a029ad8d279856baf6716f5fc38caf84
+  $strim3 ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U> -}
+02db27860e58f2f83b16e0ba4cc46a25
+  $tc'Mon :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   410470270434031340##
+                   5261543268008732109##
+                   DNA.$trModule
+                   DNA.$tc'Mon1) -}
+01031bab0c05a694c333b2b14317e8a2
+  $tc'Mon1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Mon"#) -}
+0c0797831a7422526d68d0ff856f7015
+  $tcMon :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   18082671652985162056##
+                   10455022653258127031##
+                   DNA.$trModule
+                   DNA.$tcMon1) -}
+3b0d294cf6ef7bb119c48945562af394
+  $tcMon1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Mon"#) -}
+cc4259b8daa9b51f9a2411048a3929bf
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module DNA.$trModule2 DNA.$trModule1) -}
+b70b69632b20c858eef914fc60d5f47e
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "DNA"#) -}
+a7faa8980acd5c31ee6ce28a14ee33d7
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "nucleotide-count-1.0.0.3-1meloKazsgKAGU5BFCvnwr"#) -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  $w$cshowsPrec :: GHC.Prim.Int# -> DNA.Mon -> GHC.Show.ShowS
+  {- Arity: 2, Strictness: <S,U><L,1*U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) (w :: DNA.Mon) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = Data.Either.$w$cshowsPrec
+                       @ [GHC.Types.Char]
+                       @ (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+                       DNA.$fShowMon_$s$fShowMap
+                       GHC.Show.$fShow[]_$s$fShow[]1
+                       11#
+                       w `cast` (DNA.N:Mon[0])
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char DNA.$fShowMon2 (g x)
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           DNA.$fShowMon2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) }) -}
+65384f553670e9ced49ffdd5ee154b71
+  $w$sgo10 ::
+    GHC.Prim.Char#
+    -> a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> Data.Map.Base.Map GHC.Types.Char a1
+  {- Arity: 3, Strictness: <L,U><L,U><S,1*U>, Inline: [0] -}
+f2d91edebe5def452a9cc84cde845311
+  $w$sgreater ::
+    GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> (# GHC.Base.Maybe a1, Data.Map.Base.Map GHC.Types.Char a1 #)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+c2604c901ae0bd94d207996d54123896
+  $w$smiddle ::
+    GHC.Types.Char
+    -> GHC.Types.Char
+    -> Data.Map.Base.Map GHC.Types.Char a1
+    -> (# GHC.Base.Maybe a1, Data.Map.Base.Map GHC.Types.Char a1 #)
+  {- Arity: 3, HasNoCafRefs, Strictness: <L,1*U(U)><L,1*U(U)><S,1*U>,
+     Inline: [0] -}
+71187a1656cf461590bf8911af5bfb17
+  $wpoly_go1 ::
+    GHC.Prim.Char#
+    -> Data.Map.Base.Map GHC.Types.Char a -> GHC.Base.Maybe a
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,U><S,1*U>, Inline: [0] -}
+947924f62c4c95be4fd2d5d8d7091652
+  $wpoly_go10 ::
+    GHC.Prim.Int#
+    -> Data.Map.Base.Map GHC.Types.Char a
+    -> [(GHC.Types.Char, a)]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 3, Strictness: <L,U><S,1*U><S,1*U>, Inline: [0] -}
+8b1ad521f680142ec6f7ef46eca05bc8
+  newtype Mon
+    = Mon (Data.Either.Either
+             GHC.Base.String (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int))
+f2c61dae3a3508657dcc5c4e6b8d997f
+  nucleotideCounts ::
+    GHC.Base.String
+    -> Data.Either.Either
+         GHC.Base.String (Data.Map.Base.Map GHC.Types.Char GHC.Types.Int)
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (0, True, True)
+                DNA.nucleotideCounts1
+                  `cast`
+                (<[GHC.Types.Char]>_R ->_R DNA.N:Mon[0]) -}
+ffb6ed82f70af634d760439c583b74f1
+  nucleotideCounts1 :: [GHC.Types.Char] -> DNA.Mon
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 DNA.nucleotideCounts_go x) -}
+99fc0ff718ea386fa14c599511284688
+  nucleotideCounts_go :: [GHC.Types.Char] -> DNA.Mon
+  {- Arity: 1, Strictness: <S,1*U> -}
+instance [safe] GHC.Base.Monoid [DNA.Mon] = DNA.$fMonoidMon
+instance [safe] GHC.Show.Show [DNA.Mon] = DNA.$fShowMon
+"SPEC/DNA $fShowMap @ Char @ Int" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                GHC.Types.Int)
+                                                  ($dShow :: GHC.Show.Show GHC.Types.Char)
+  Data.Map.Base.$fShowMap @ GHC.Types.Char
+                          @ GHC.Types.Int
+                          $dShow
+                          $dShow1
+  = DNA.$fShowMon_$s$fShowMap
+"SPEC/DNA $fShowMap_$cshowList @ Char @ Int" [ALWAYS] forall ($dShow1 :: GHC.Show.Show
+                                                                           GHC.Types.Int)
+                                                             ($dShow :: GHC.Show.Show
+                                                                          GHC.Types.Char)
+  Data.Map.Base.$fShowMap_$cshowList @ GHC.Types.Char
+                                     @ GHC.Types.Int
+                                     $dShow
+                                     $dShow1
+  = DNA.$fShowMon_$s$fShowMap_$cshowList
+"SPEC/DNA fromList @ Char _" [ALWAYS] forall @ a
+                                             ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.fromList @ GHC.Types.Char @ a $dOrd
+  = DNA.$fMonoidMon_$sfromList @ a
+"SPEC/DNA unionWithKey @ Char _" [ALWAYS] forall @ a
+                                                 ($dOrd :: GHC.Classes.Ord GHC.Types.Char)
+  Data.Map.Base.unionWithKey @ GHC.Types.Char @ a $dOrd
+  = DNA.$fMonoidMon_$sunionWithKey @ a
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

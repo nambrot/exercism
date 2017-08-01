@@ -1,0 +1,187 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-12 22:22:03.444922 UTC
+
+interface scrabble-score-1.0.0.3-3Ri2TIkZsF7L4XQAB7eXaT:Scrabble 8002
+  interface hash: 0a37c28b721d2ff406a51a547a19e063
+  ABI hash: 1fbb15d6cf70ff3164ab30b6a3302051
+  export-list hash: 08652410d9f88201cc268667f5fc4b0b
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Scrabble.scoreLetter
+  Scrabble.scoreWord
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Maybe d876c4ffe4b3c43755a781e8ad860d88
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 318df275d77dcdb18e0006d8d7870c2a
+2fc5bab2be680e82665aa7e326f78eb5
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Scrabble.$trModule2
+                   Scrabble.$trModule1) -}
+6a2c93e478922c3a12ef13b6bb16d7ec
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Scrabble"#) -}
+78449afffbfb14efe028f713c9e09669
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "scrabble-score-1.0.0.3-3Ri2TIkZsF7L4XQAB7eXaT"#) -}
+e9a3b33f5f3fc4c7c6c2f89a9540bc4f
+  scoreLetter :: GHC.Types.Char -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <L,1*U(U)>,
+     Unfolding: (\ (letter :: GHC.Types.Char) ->
+                 let {
+                   l :: GHC.Types.Char
+                   = case letter of ww { GHC.Types.C# ww1 ->
+                     case {__pkg_ccall base-4.9.1.0 u_towlower GHC.Prim.Int#
+                                                               -> GHC.Prim.State# GHC.Prim.RealWorld
+                                                               -> (# GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld,
+                                                                     GHC.Prim.Int# #)}
+                            (GHC.Prim.ord# ww1)
+                            GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                     case GHC.Prim.tagToEnum#
+                            @ GHC.Types.Bool
+                            (GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111##) of wild1 {
+                       GHC.Types.False -> GHC.Char.chr2 ds1
+                       GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# ds1) } } }
+                 } in
+                 case GHC.List.elem
+                        @ GHC.Types.Char
+                        GHC.Classes.$fEqChar
+                        l
+                        Scrabble.scoreLetter15 of wild {
+                   GHC.Types.False
+                   -> case GHC.List.elem
+                             @ GHC.Types.Char
+                             GHC.Classes.$fEqChar
+                             l
+                             Scrabble.scoreLetter14 of wild1 {
+                        GHC.Types.False
+                        -> case GHC.List.elem
+                                  @ GHC.Types.Char
+                                  GHC.Classes.$fEqChar
+                                  l
+                                  Scrabble.scoreLetter13 of wild2 {
+                             GHC.Types.False
+                             -> case GHC.List.elem
+                                       @ GHC.Types.Char
+                                       GHC.Classes.$fEqChar
+                                       l
+                                       Scrabble.scoreLetter12 of wild3 {
+                                  GHC.Types.False
+                                  -> case GHC.List.elem
+                                            @ GHC.Types.Char
+                                            GHC.Classes.$fEqChar
+                                            l
+                                            Scrabble.scoreLetter11 of wild4 {
+                                       GHC.Types.False
+                                       -> case GHC.List.elem
+                                                 @ GHC.Types.Char
+                                                 GHC.Classes.$fEqChar
+                                                 l
+                                                 Scrabble.scoreLetter10 of wild5 {
+                                            GHC.Types.False
+                                            -> case GHC.List.elem
+                                                      @ GHC.Types.Char
+                                                      GHC.Classes.$fEqChar
+                                                      l
+                                                      Scrabble.scoreLetter9 of wild6 {
+                                                 GHC.Types.False -> Scrabble.scoreLetter8
+                                                 GHC.Types.True -> Scrabble.scoreLetter7 }
+                                            GHC.Types.True -> Scrabble.scoreLetter6 }
+                                       GHC.Types.True -> Scrabble.scoreLetter5 }
+                                  GHC.Types.True -> Scrabble.scoreLetter4 }
+                             GHC.Types.True -> Scrabble.scoreLetter3 }
+                        GHC.Types.True -> Scrabble.scoreLetter2 }
+                   GHC.Types.True -> Scrabble.scoreLetter1 }) -}
+6c2c76a67b349073f94de6f41e6c147d
+  scoreLetter1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (1) -}
+8a3f9f174bc8c47674483f4ab85656cf
+  scoreLetter10 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "jx"#) -}
+22731ac1f2795e3413c75758a6fe4c32
+  scoreLetter11 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "k"#) -}
+1b5f20ac254dd7f672be09b93dddfd4b
+  scoreLetter12 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "fhvwy"#) -}
+2385801f933c66f95ac1110854e2ac4e
+  scoreLetter13 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "bcmp"#) -}
+f2e34d33a9c4dd7930001a6dfe9d53d7
+  scoreLetter14 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "dg"#) -}
+c9e6ee74c4170fb2c588655fd7ddbfd2
+  scoreLetter15 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "aeioulnrst"#) -}
+1b0e608c60f87dba8639ed4103bb24c7
+  scoreLetter2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (2) -}
+969c4e9d7e2052f21d25189ffe709cba
+  scoreLetter3 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (3) -}
+3de8a44537a0c5ad8e727cdf0411f186
+  scoreLetter4 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (4) -}
+676fb985cf9608d1b18339cbb7741c57
+  scoreLetter5 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (5) -}
+b64da06e9ecb8c7d171481fa88b9ade4
+  scoreLetter6 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (8) -}
+864eaa778b44318266af10d328a4780f
+  scoreLetter7 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (10) -}
+f8803d5dd9a391d2b88f8dcc81848dc0
+  scoreLetter8 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+bd2603ba93069fdf73f886842fe14578
+  scoreLetter9 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "qz"#) -}
+03ed5701711cba5542a13996d6ae991f
+  scoreWord :: GHC.Base.String -> GHC.Integer.Type.Integer
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (xs :: GHC.Base.String) ->
+                 Scrabble.scoreWord_go xs Scrabble.scoreLetter8) -}
+6520d5d857924bdd8789d337a8d4add6
+  scoreWord_go ::
+    [GHC.Types.Char]
+    -> GHC.Integer.Type.Integer -> GHC.Integer.Type.Integer
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

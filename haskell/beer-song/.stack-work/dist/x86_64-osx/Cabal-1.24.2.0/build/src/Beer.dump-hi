@@ -1,0 +1,70 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-12 20:58:34.306813 UTC
+
+interface beer-song-0.1.0.2-EiOPq9esY4I1MClX7gnSFy:Beer 8002
+  interface hash: 33414928612a42ed6d79a0c7c95f1967
+  ABI hash: 3b0f5954439e2febc21b517e0654106a
+  export-list hash: 7ede260f86f6a00f50534f3df5046a72
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Beer.song
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.List 07ae2acca6538aa0800bd0a993ac6ac1
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Show a027f5ac24879eaba752f44aa90fe511
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+cc2adec86355ec5f02a8bce3bb9f2859
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module Beer.$trModule2 Beer.$trModule1) -}
+a6a3ad0b8fc32c73a9404bdd8c46f7ac
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Beer"#) -}
+21d0b7992fe8c41ac95ec20f9e55ed10
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "beer-song-0.1.0.2-EiOPq9esY4I1MClX7gnSFy"#) -}
+5fca8ec46eea87da24f0d0d35f92d07d
+  $wverse ::
+    GHC.Integer.Type.Integer
+    -> (# [GHC.Types.Char], [[GHC.Types.Char]] #)
+  {- Arity: 1, Strictness: <S,U>, Inline: [0] -}
+18d4c9baf44a93e4b9a099f087c807bc
+  song :: GHC.Base.String
+  {- Unfolding: (case Beer.$wverse
+                        Beer.song2 of ww { (#,#) ww1 ww2 ->
+                 Data.OldList.intercalate_$spoly_go
+                   @ GHC.Types.Char
+                   ww1
+                   (Data.OldList.prependToAll @ [GHC.Types.Char] Beer.song1 ww2) }) -}
+87440e71d86728ba0b788203b828f831
+  song1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "\n"#) -}
+48ef38fb8fadd471ef7d0d81c3d2a094
+  song2 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (99) -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

@@ -1,0 +1,165 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-31 19:52:29.806442 UTC
+
+interface atbash-cipher-1.0.0.3-CeFWW7E9imI1GV4w5BSiIc:Atbash 8002
+  interface hash: 2f97a9e76957839b7ef7cd5085c895b3
+  ABI hash: bbb6180dcbb469d39ca577ef3c9047af
+  export-list hash: 6592dfe9f784506d23db8c83be4211f4
+  orphan hash: ff1649459e2baf45b1bee7f982632a29
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Atbash.decode
+  Atbash.encode
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.OldList 27987919d8da2f92e3f472ca81f730f8
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Enum 3811281f7b5f26da514529cf3ed44009
+import  -/  base-4.9.1.0:GHC.List ab8c4e523e6c479c549d3bcd5fc4a439
+import  -/  base-4.9.1.0:GHC.Num 00bfaa7b2f9d6084913c0697a8a49ec8
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+7f0d0b98dde96da826415a4803967b93
+  $sconcatMap :: (a -> [b]) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Inline: INLINE (sat-args=2),
+     Unfolding: InlineRule (2, False, False)
+                (\ @ a @ b (f :: a -> [b]) (xs :: [a]) ->
+                 GHC.Base.build
+                   @ b
+                   (\ @ b1 (c :: b -> b1 -> b1)[OneShot] (n :: b1)[OneShot] ->
+                    GHC.Base.foldr
+                      @ a
+                      @ b1
+                      (\ (x :: a) (b2 :: b1)[OneShot] ->
+                       GHC.Base.foldr @ b @ b1 c b2 (f x))
+                      n
+                      xs)) -}
+80032c7b9f2b69bf902fa20bf512018d
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Atbash.$trModule2
+                   Atbash.$trModule1) -}
+acfe8aa48d8d1e83d103d78d75dcd19a
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Atbash"#) -}
+8909bbaa5a89ceede1529c5010cc38a5
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "atbash-cipher-1.0.0.3-CeFWW7E9imI1GV4w5BSiIc"#) -}
+561eef6f4e1ba7d48e40538d0a1fcb09
+  $wflipChar :: GHC.Prim.Char# -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Char#) ->
+                 let {
+                   $j :: GHC.Prim.Void# -> [GHC.Types.Char]
+                     {- Arity: 1, Strictness: <L,A> -}
+                   = \ (w :: GHC.Prim.Void#)[OneShot] ->
+                     GHC.Types.:
+                       @ GHC.Types.Char
+                       (case {__pkg_ccall base-4.9.1.0 u_towlower GHC.Prim.Int#
+                                                                  -> GHC.Prim.State#
+                                                                       GHC.Prim.RealWorld
+                                                                  -> (# GHC.Prim.State#
+                                                                          GHC.Prim.RealWorld,
+                                                                        GHC.Prim.Int# #)}
+                               (GHC.Prim.ord# ww)
+                               GHC.Prim.realWorld# of wild { (#,#) ds ds1 ->
+                        case GHC.Prim.tagToEnum#
+                               @ GHC.Types.Bool
+                               (GHC.Prim.leWord# (GHC.Prim.int2Word# ds1) 1114111##) of wild1 {
+                          GHC.Types.False -> GHC.Char.chr2 ds1
+                          GHC.Types.True
+                          -> let {
+                               i# :: GHC.Prim.Int# = GHC.Prim.-# 219# ds1
+                             } in
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.leWord# (GHC.Prim.int2Word# i#) 1114111##) of wild2 {
+                               GHC.Types.False -> GHC.Char.chr2 i#
+                               GHC.Types.True -> GHC.Types.C# (GHC.Prim.chr# i#) } } })
+                       (GHC.Types.[] @ GHC.Types.Char)
+                 } in
+                 case GHC.Unicode.$wgeneralCategory ww of wild {
+                   DEFAULT -> GHC.Types.[] @ GHC.Types.Char
+                   GHC.Unicode.UppercaseLetter -> $j GHC.Prim.void#
+                   GHC.Unicode.LowercaseLetter -> $j GHC.Prim.void#
+                   GHC.Unicode.TitlecaseLetter -> $j GHC.Prim.void#
+                   GHC.Unicode.ModifierLetter -> $j GHC.Prim.void#
+                   GHC.Unicode.OtherLetter -> $j GHC.Prim.void#
+                   GHC.Unicode.DecimalNumber
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        (GHC.Types.C# ww)
+                        (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Unicode.LetterNumber
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        (GHC.Types.C# ww)
+                        (GHC.Types.[] @ GHC.Types.Char)
+                   GHC.Unicode.OtherNumber
+                   -> GHC.Types.:
+                        @ GHC.Types.Char
+                        (GHC.Types.C# ww)
+                        (GHC.Types.[] @ GHC.Types.Char) }) -}
+92f2588941b1fcf3fa25cfbb3a821f80
+  decode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1,
+     Unfolding: (Atbash.$sconcatMap
+                   @ GHC.Types.Char
+                   @ GHC.Types.Char
+                   Atbash.flipChar) -}
+fe86f26cf7d4f5979b85a7cf8d8ba697
+  encode :: GHC.Base.String -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (x :: [GHC.Types.Char]) ->
+                 case Atbash.encode_slices
+                        @ GHC.Types.Char
+                        (Atbash.encode_go x) of wild {
+                   [] -> GHC.Types.[] @ GHC.Types.Char
+                   : w ws
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        w
+                        (Data.OldList.unwords_go ws) }) -}
+37589983a7f1f03378ad55ee7d0ef161
+  encode_go :: [GHC.Types.Char] -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S,1*U> -}
+40fc26bb3bfd4d817ac24c4511e19701
+  encode_slices :: [a] -> [[a]]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U> -}
+688abd50bca07bc1bbbe75c49d976c76
+  flipChar :: GHC.Types.Char -> [GHC.Types.Char]
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Char) ->
+                 case w of ww { GHC.Types.C# ww1 -> Atbash.$wflipChar ww1 }) -}
+"SPEC/Atbash concatMap @ [] _ _" [ALWAYS] forall @ a
+                                                 @ b
+                                                 ($dFoldable :: Data.Foldable.Foldable [])
+  Data.Foldable.concatMap @ [] @ a @ b $dFoldable
+  = Atbash.$sconcatMap @ a @ b
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

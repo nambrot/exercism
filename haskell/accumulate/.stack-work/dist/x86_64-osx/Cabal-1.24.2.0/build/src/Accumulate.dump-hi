@@ -1,0 +1,53 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-11 22:12:18.629301 UTC
+
+interface accumulate-0.1.0.2-G3l0Zucc7S61oOrz8UjqhP:Accumulate 8002
+  interface hash: 3bdb44a434212ba0f5a70aee713fcba8
+  ABI hash: 453cbb594ff34da92d7fefd770142d2d
+  export-list hash: 33c1a9ada57441f677f4ec9bcd84ba93
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Accumulate.accumulate
+module dependencies:
+package dependencies: base-4.9.1.0* ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Either base-4.9.1.0:Data.Functor.Const
+                         base-4.9.1.0:Data.Monoid base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:GHC.Generics base-4.9.1.0:GHC.IO.Exception
+                         base-4.9.1.0:GHC.TypeLits
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+dbc56f73c9106a49c799f271f10b8ce8
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Accumulate.$trModule2
+                   Accumulate.$trModule1) -}
+0204fcedc8c563eeb98fcbab2a3242d2
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Accumulate"#) -}
+1291003fa1048bc835c9259c7f0606fd
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "accumulate-0.1.0.2-G3l0Zucc7S61oOrz8UjqhP"#) -}
+d397a5dcf3e3a41968bb5af825f6c987
+  accumulate :: (a -> b) -> [a] -> [b]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: InlineRule (0, True, True) GHC.Base.map -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+

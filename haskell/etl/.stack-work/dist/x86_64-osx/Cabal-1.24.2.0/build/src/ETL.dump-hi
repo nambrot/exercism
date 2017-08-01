@@ -1,0 +1,85 @@
+
+==================== FINAL INTERFACE ====================
+2017-07-11 19:41:09.579693 UTC
+
+interface etl-1.0.0.3-8S1kHbkD5EM5lzMXfkUa3A:ETL 8002
+  interface hash: f79aca2e57ad31c309cbb9d3d4e3c301
+  ABI hash: f30237f4336d9e7325e620d5fbca85f7
+  export-list hash: 179898575419dc20631c3ea260eb8e26
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: f6624f22fcdd76ed0ac6625466e2d712
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  ETL.transform
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Data.Char 01433d23661edb6e5ef1536ef1e6774c
+import  -/  base-4.9.1.0:Data.Foldable 3e0b6967a1da89945d0e2d47266337a2
+import  -/  base-4.9.1.0:Data.Monoid 51cc9cd8c130d49ba96b7c2c2406022b
+import  -/  base-4.9.1.0:GHC.Base c4231c43c07e46080a26bf94094c7aa1
+import  -/  base-4.9.1.0:GHC.Unicode a175ecf20bf1272d9ae31337e7da43ab
+import  -/  base-4.9.1.0:Prelude 22dd289b8469a8fa8dc81cab7b237771
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map 0fd5c8559af8bc4b6f38b9cf9ba5a467
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base 8b155a212edaca6c85bcefe65a8bc505
+2d7c8d2ab0bde8bec2bf9ed3667b699d
+  $sunions1 ::
+    Data.Map.Base.Map GHC.Types.Char a
+    -> [Data.Map.Base.Map GHC.Types.Char a]
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 2, Strictness: <S,1*U><S,1*U> -}
+f9f358bb1736295ffd97fa331807ab5c
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module ETL.$trModule2 ETL.$trModule1) -}
+33006eec2f556f294469ec6a188e1db9
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "ETL"#) -}
+836c4f048ef22e67b32f71dbf03cae5a
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "etl-1.0.0.3-8S1kHbkD5EM5lzMXfkUa3A"#) -}
+05431d081c30aa32f7f8cf07b1ec12f2
+  transform ::
+    Data.Map.Base.Map a GHC.Base.String
+    -> Data.Map.Base.Map GHC.Types.Char a
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ @ a (x :: Data.Map.Base.Map a [GHC.Types.Char]) ->
+                 ETL.$sunions1
+                   @ a
+                   (Data.Map.Base.Tip @ GHC.Types.Char @ a)
+                   (ETL.transform1
+                      @ a
+                      (GHC.Types.[] @ (Data.Map.Base.Map GHC.Types.Char a))
+                      x)) -}
+df09d797dbb3cd32e32a54e62fde2823
+  transform1 ::
+    [Data.Map.Base.Map GHC.Types.Char a]
+    -> Data.Map.Base.Map a [GHC.Types.Char]
+    -> [Data.Map.Base.Map GHC.Types.Char a]
+  {- Arity: 2, Strictness: <L,1*U><S,1*U> -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
